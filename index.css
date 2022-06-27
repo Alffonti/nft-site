@@ -1,0 +1,114 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #2b283a;
+    margin: 0;
+}
+
+/* typography */
+
+h1, h3{
+    margin: 0; /* adding padding removes the default top margin from the h1 element (the first child of the parent element merges its top margin with the parent element) */
+}
+
+h1{
+    font-size: 36px;
+    color: whitesmoke;
+
+}
+
+h2{
+    margin-top: 0; /* adding padding removes the default top margin from the h2 element (the first child of the parent element merges its top margin with the parent element) */
+}
+
+h3{
+    font-size: 20px;
+    color: #d0aaff;
+}
+
+p{
+    line-height: 23px;
+}
+
+/* links */
+
+a{
+    color: #ef5839;
+    text-decoration: underline dotted;
+}
+
+a:hover, a:active{
+    color: #d4b44c;
+}
+
+/* a main `btn` class and modifer classes: btn-dark, btn-mid and btn-light  */
+.btn{
+    padding: 10px 19px;
+    border-radius: 4.6px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block; /* inline elements like (span and a) cant be styled with top and bottom margins. In order to achieve this, I need to modify them to inline-block elements  */
+}
+
+.btn-dark{
+    background-color: #5f29a3;
+    color: whitesmoke;
+}
+
+.btn-mid{
+    background-color: #f0e0ff;
+    color: #5f29a3;
+}
+
+.btn-light{
+    background-color: whitesmoke;
+    color: #5f29a3;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #f3e885;
+    color: #2b283a;
+}
+
+/* layout */
+
+/* grouping selectors */
+header,
+section,
+footer{
+    padding: 45px 0; /* adding padding removes the default top margin from the h1 element (the first child of the parent element merges its top margin with the parent element) */
+
+}
+
+header, .section-two{
+    background: #5f29a6;
+}
+
+.section-two{
+    color: whitesmoke;
+}
+
+.container{
+    width: 620px; /* content width */
+    margin: 0 auto;
+}
+
+.main-image{
+    width: 100%;
+}
+
+.feature-image{
+    width: 300px;
+    border-radius: 4.6px;
+}
+
+section-two-image-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    text-align: center;
+    color: #5f29a3;
+}
